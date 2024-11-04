@@ -144,7 +144,8 @@ body {
     height: fit-content;
     padding-top: 3.5rem;
     backdrop-filter: blur(10px);
-    background: $neutral-light;
+    // background: $neutral-light;
+    background: #eaf0f2;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -153,6 +154,7 @@ body {
     .right {
       width: 100%;
       margin-top: 8rem;
+      height: 100vh;
       display: flex;
       justify-content: start;
       align-items: center;
@@ -171,9 +173,41 @@ body {
           color: $primary-medium;
         }
       }
-      p{
-        margin-top:1rem;
+      p {
+        margin-top: 1rem;
         word-spacing: 1px;
+      }
+      .social {
+        margin: 1.5rem 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        .social__icons {
+          font-size: 1.5rem;
+          color: $primary-medium;
+          text-shadow: -1px 2px 2px rgba(25, 118, 210);
+        }
+      }
+      button {
+        border: none;
+        padding: 0.6rem;
+        font-size: 1rem;
+        border-radius: 20px;
+        color: $neutral-light;
+        background: $secondary-medium;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+          rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+          rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+        border: 1px solid $primary-dark;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+        &:active {
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+            rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+        }
       }
     }
     .left {

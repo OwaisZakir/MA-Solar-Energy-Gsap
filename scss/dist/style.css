@@ -143,7 +143,7 @@ body #Home {
   height: fit-content;
   padding-top: 3.5rem;
   backdrop-filter: blur(10px);
-  background: #F5F5F5;
+  background: #eaf0f2;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -153,6 +153,7 @@ body #Home {
 body #Home .right {
   width: 100%;
   margin-top: 8rem;
+  height: 100vh;
   display: flex;
   justify-content: start;
   align-items: center;
@@ -173,6 +174,35 @@ body #Home .right .right__second-heading span {
 body #Home .right p {
   margin-top: 1rem;
   word-spacing: 1px;
+}
+body #Home .right .social {
+  margin: 1.5rem 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+body #Home .right .social .social__icons {
+  font-size: 1.5rem;
+  color: #FFC107;
+  text-shadow: -1px 2px 2px #1976d2;
+}
+body #Home .right button {
+  border: none;
+  padding: 0.6rem;
+  font-size: 1rem;
+  border-radius: 20px;
+  color: #F5F5F5;
+  background: #2196F3;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  border: 1px solid #FF9800;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+body #Home .right button:active {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
 body #Home .left {
   width: 100%;
