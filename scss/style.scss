@@ -21,19 +21,21 @@ body {
     padding: 0.8rem 1rem;
     z-index: 1;
     background: $primary-medium;
-    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+      rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+      rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
     .header__main {
       display: flex;
       justify-content: space-between;
       align-items: center;
       color: $neutral-light;
       h1 {
-        font-size: 1.3rem;
+        font-size: 1.4rem;
         letter-spacing: 2px;
         text-transform: uppercase;
         font-family: "Rafgins", sans-serif;
-        box-shadow: rgba(50, 50, 93, 0.25) 6px 12px -2px,
-          rgba(0, 0, 0, 0.3) 3px 7px -3px;
+        text-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+          rgba(0, 0, 0, 0.3) 0px 7px 13px, rgba(0, 0, 0, 0.2) 0px -3px 0px;
       }
       #openMenu {
         background: transparent;
@@ -153,7 +155,7 @@ body {
     gap: 20px;
     .right {
       width: 100%;
-      margin-top: 8rem;
+      margin-top: 6rem;
       height: 100vh;
       display: flex;
       justify-content: start;
@@ -166,9 +168,11 @@ body {
       .right__heading,
       .right__second-heading {
         color: $secondary-dark;
-        font-size: 1.8rem;
-        text-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px,
-          rgba(0, 0, 0, 0.06) 0px 1px 2px;
+        font-size: 2.2rem;
+        white-space: nowrap;
+        text-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px,
+          rgba(0, 0, 0, 0.24) 0px 1px 2px;
+
         span {
           color: $primary-medium;
         }
@@ -176,6 +180,7 @@ body {
       p {
         margin-top: 1rem;
         word-spacing: 1px;
+        font-size: 1.3rem;
       }
       .social {
         margin: 1.5rem 0;

@@ -22,7 +22,7 @@ body header {
   padding: 0.8rem 1rem;
   z-index: 1;
   background: #FFC107;
-  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 body header .header__main {
   display: flex;
@@ -31,11 +31,11 @@ body header .header__main {
   color: #F5F5F5;
 }
 body header .header__main h1 {
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   letter-spacing: 2px;
   text-transform: uppercase;
   font-family: "Rafgins", sans-serif;
-  box-shadow: rgba(50, 50, 93, 0.25) 6px 12px -2px, rgba(0, 0, 0, 0.3) 3px 7px -3px;
+  text-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px, rgba(0, 0, 0, 0.2) 0px -3px 0px;
 }
 body header .header__main #openMenu {
   background: transparent;
@@ -152,7 +152,7 @@ body #Home {
 }
 body #Home .right {
   width: 100%;
-  margin-top: 8rem;
+  margin-top: 6rem;
   height: 100vh;
   display: flex;
   justify-content: start;
@@ -164,8 +164,9 @@ body #Home .right {
 body #Home .right .right__heading,
 body #Home .right .right__second-heading {
   color: #1976D2;
-  font-size: 1.8rem;
-  text-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px, rgba(0, 0, 0, 0.06) 0px 1px 2px;
+  font-size: 2.2rem;
+  white-space: nowrap;
+  text-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 }
 body #Home .right .right__heading span,
 body #Home .right .right__second-heading span {
@@ -174,6 +175,7 @@ body #Home .right .right__second-heading span {
 body #Home .right p {
   margin-top: 1rem;
   word-spacing: 1px;
+  font-size: 1.3rem;
 }
 body #Home .right .social {
   margin: 1.5rem 0;
