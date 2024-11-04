@@ -34,8 +34,8 @@ body {
         letter-spacing: 2px;
         text-transform: uppercase;
         font-family: "Rafgins", sans-serif;
-        text-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
-          rgba(0, 0, 0, 0.3) 0px 7px 13px, rgba(0, 0, 0, 0.2) 0px -3px 0px;
+        text-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px,
+          rgba(0, 0, 0, 0.24) 0px 1px 2px;
       }
       #openMenu {
         background: transparent;
@@ -46,6 +46,8 @@ body {
           color: $neutral-light;
           padding-top: 0.5rem;
           font-size: 1.6rem;
+          text-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px,
+            rgba(0, 0, 0, 0.24) 0px 1px 2px;
         }
       }
     }
@@ -83,6 +85,8 @@ body {
           box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
           border-bottom-left-radius: 20px;
           border-bottom-right-radius: 20px;
+          text-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px,
+            rgba(0, 0, 0, 0.24) 0px 1px 2px;
         }
       }
       ul {
