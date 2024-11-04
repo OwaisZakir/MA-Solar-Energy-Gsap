@@ -20,20 +20,22 @@ body header {
   top: 0;
   right: 0;
   padding: 0.8rem 1rem;
-  background: #FFEB3B;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  z-index: 1;
+  background: #FFC107;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 }
 body header .header__main {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: #212121;
+  color: #F5F5F5;
 }
 body header .header__main h1 {
   font-size: 1.3rem;
   letter-spacing: 2px;
   text-transform: uppercase;
   font-family: "Rafgins", sans-serif;
+  box-shadow: rgba(50, 50, 93, 0.25) 6px 12px -2px, rgba(0, 0, 0, 0.3) 3px 7px -3px;
 }
 body header .header__main #openMenu {
   background: transparent;
@@ -42,6 +44,7 @@ body header .header__main #openMenu {
   cursor: pointer;
 }
 body header .header__main #openMenu i {
+  color: #F5F5F5;
   padding-top: 0.5rem;
   font-size: 1.6rem;
 }
@@ -53,7 +56,7 @@ body header nav {
   height: 100dvh;
   backdrop-filter: blur(2px);
   border-radius: 20px 0 0 0px;
-  background: rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.5);
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
   -webkit-border-radius: 20px 0 0 0px;
   -moz-border-radius: 20px 0 0 0px;
@@ -135,4 +138,45 @@ body header nav ul .active i {
 }
 body header nav ul .active::before {
   left: 0;
+}
+body #Home {
+  height: fit-content;
+  padding-top: 3.5rem;
+  backdrop-filter: blur(10px);
+  background: #F5F5F5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+body #Home .right {
+  width: 100%;
+  margin-top: 8rem;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  text-transform: uppercase;
+  color: #212121;
+}
+body #Home .right .right__heading,
+body #Home .right .right__second-heading {
+  color: #1976D2;
+  font-size: 1.8rem;
+  text-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px, rgba(0, 0, 0, 0.06) 0px 1px 2px;
+}
+body #Home .right .right__heading span,
+body #Home .right .right__second-heading span {
+  color: #FFC107;
+}
+body #Home .right p {
+  margin-top: 1rem;
+  word-spacing: 1px;
+}
+body #Home .left {
+  width: 100%;
+}
+body #Home .left img {
+  width: 100%;
 }
