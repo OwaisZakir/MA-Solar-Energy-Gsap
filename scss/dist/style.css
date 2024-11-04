@@ -42,12 +42,12 @@ body header .header__main #openMenu {
   border: none;
   outline: none;
   cursor: pointer;
+  text-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 }
 body header .header__main #openMenu i {
   color: #F5F5F5;
   padding-top: 0.5rem;
   font-size: 1.6rem;
-  text-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 }
 body header nav {
   position: fixed;
@@ -84,7 +84,6 @@ body header nav .btn__container #closeBtn {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
-  text-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 }
 body header nav ul {
   margin-top: 5rem;
