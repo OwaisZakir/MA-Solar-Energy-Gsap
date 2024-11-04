@@ -15,8 +15,13 @@ body {
   background: #F5F5F5;
 }
 body header {
-  background: #FFEB3B;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
   padding: 0.8rem 1rem;
+  background: #FFEB3B;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 body header .header__main {
   display: flex;
@@ -26,11 +31,15 @@ body header .header__main {
 }
 body header .header__main h1 {
   font-size: 1.3rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-family: "Rafgins", sans-serif;
 }
 body header .header__main #openMenu {
   background: transparent;
   border: none;
   outline: none;
+  cursor: pointer;
 }
 body header .header__main #openMenu i {
   padding-top: 0.5rem;
@@ -52,26 +61,25 @@ body header nav {
   -o-border-radius: 20px 0 0 0px;
 }
 body header nav .btn__container {
-  padding: 0.9rem;
+  padding-right: 0.9rem;
   display: flex;
   justify-content: end;
   align-items: center;
 }
 body header nav .btn__container #closeBtn {
+  height: 60px;
   color: #212121;
   font-size: 2rem;
   background: transparent;
-  border-radius: 20px;
   outline: none;
   border: none;
   cursor: pointer;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  -ms-border-radius: 20px;
-  -o-border-radius: 20px;
-}
-body header nav .btn__container #closeBtn i {
+  display: flex;
+  justify-self: center;
+  align-items: end;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 body header nav ul {
   margin-top: 4rem;
@@ -117,5 +125,14 @@ body header nav ul li a:hover i {
   color: #1976D2;
 }
 body header nav ul li a:hover::before {
+  left: 0;
+}
+body header nav ul .active {
+  color: #616161;
+}
+body header nav ul .active i {
+  color: #1976D2;
+}
+body header nav ul .active::before {
   left: 0;
 }
